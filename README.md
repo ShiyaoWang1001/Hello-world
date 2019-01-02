@@ -1,5 +1,5 @@
 # Hello-world
-第一个库
+#第一个库
 #西建大图书馆预约脚本
 import requests
 import json
@@ -86,7 +86,7 @@ try:
         else:
             print('保险重复预约{0}次'.format(x))
     time.sleep(30)
-    if (eval(timing) == 1):
+    if (eval(timing) == 1):          #如果开始输入的关机指令为1，计算机到时间自动关闭
         os.system('shutdown -s -f -t 1')
     else:
         pass
